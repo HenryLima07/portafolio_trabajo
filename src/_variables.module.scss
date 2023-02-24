@@ -1,0 +1,21 @@
+
+
+//color themes variables
+$theme-primary-color: #30391f;
+$theme-primary-light-color: lighten($theme-primary-color, 0.75);
+$theme-secondary-color: #668A4C;
+$theme-third-color: darken(#A7CCCB, 65);
+$theme-dark-color: #464646;
+$theme-darkest-color: darken($theme-dark-color, 10);
+$theme-lightest-color: #FFFF;
+
+$theme-border: 2px solid $theme-darkest-color;
+$theme-border-radius: 0.40rem;
+
+//break points on screen sizes
+// Breakpoints
+$screen-sm: 36em;       //576px Large smartphones
+$screen-md: 48em;       //768px Small tablets
+$screen-lg: 62em;       //992px Tablets
+$screen-xl: 75em;       //1200px Desktops
+$screen-xxl: 87.5em;    //1400px Large desktops
