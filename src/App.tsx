@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import classes from "./app.module.scss";
+import "./index.css";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        this is my app
-      </div>
+    <div className={classes["app"]}>
+
     </div>
   )
 }
