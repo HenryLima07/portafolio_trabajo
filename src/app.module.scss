@@ -1,0 +1,7 @@
+@import "/src/variables.module";
+@import "/src/mixins.module";
+
+.app{
+    background-color: $theme-primary-color;
+    @include size(100%, 100vh);
+}
