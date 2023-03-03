@@ -16,7 +16,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<LandingView />} />
+        <Route path={"/"} element={<LandingView />} />
       </Routes>
     </div>
   )
