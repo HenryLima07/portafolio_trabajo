@@ -1,0 +1,74 @@
+@import "../../mixins.module";
+@import "../../variables.module";
+
+.About{
+    @include size(100vw, 100vh);
+    background-color: $theme-primary-color;
+
+    padding: 0 1.5rem;
+    @include flex();
+
+    > .Presentation{
+
+        font-family: $third-font-open-sans;
+        font-weight: 500;
+        line-height: 1.4;
+        color: $theme-dark-color;
+        padding: 1.5rem 0;
+
+        >h2{
+            font-family: $fourth-font-sans-pro;
+            font-weight: 600;
+            font-size: 2.5rem;
+
+            color: $theme-lightest-color;
+        }
+    }
+
+    > .photo{
+
+        position: relative;
+
+        > .image{
+            position: absolute;
+            @include size(100%);
+            z-index: 15;
+            
+            &--blue{
+                background-color: rgba($color: $theme-primary-color, $alpha: 0.5);
+            }
+            &--real{
+                background-color: transparent;
+            }
+        }
+        > .border{
+
+            position: absolute;
+            @include size(100%);
+
+            right: -27px;
+            bottom: -27px;
+            border-radius: $theme-border-radius;
+            z-index: 3;
+
+            &--semiblack{
+                border: solid $theme-darkest-color;
+            }
+            
+            &--blue{
+                border: solid $theme-secondary-color;
+            }
+        }
+
+        > img {
+
+            position: relative;
+            width: 17rem;
+
+            border-radius: $theme-border-radius;
+            z-index: 10;
+
+        }
+    }
+    
+}
