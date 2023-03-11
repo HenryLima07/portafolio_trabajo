@@ -542,6 +542,11 @@ debug@^4.1.0:
   dependencies:
     ms "2.1.2"
 
+devicon@^2.15.1:
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/devicon/-/devicon-2.15.1.tgz#148b791886f3d085f0f0b9aba72da71b2070dc56"
+  integrity sha512-iyapbDVaq1PgMSMZ4IekgjH230aSUU4kHmZ142lQ2TJ+9HB4P4V78eNDkyaQEEoi0KJhxIGPcTSFqxHaZ4OMyw==
+
 electron-to-chromium@^1.4.284:
   version "1.4.309"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.309.tgz#82158606da135ffffc16a2e1eb853fa0a10955e7"

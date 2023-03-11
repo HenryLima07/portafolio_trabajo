@@ -9,7 +9,7 @@ const Navbar = ({className = "", setMenu=()=>{false}})=>{
             <nav className={`${classes["nav-menu"]}`}>
                 <X onClick={setMenu}/>
                 <ol>
-                    <Navlink to="/" exact onClick={setMenu}> About </Navlink>
+                    <Navlink to="/" onClick={setMenu}> About </Navlink>
                     <Navlink to="/" onClick={setMenu}> Experience </Navlink>
                     <Navlink to="/" onClick={setMenu}> Work </Navlink>
                     

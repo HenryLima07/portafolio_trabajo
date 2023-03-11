@@ -13,9 +13,11 @@ $theme-dark-color: lighten(#58595b, 0.75);
 $theme-darkest-color: darken($theme-primary-color, 3);
 $theme-lightest-color: #FFFF;
 
-$theme-border: 2px solid ;
-$theme-aside-light: lighten($theme-primary-color, 29);
+$theme-border: solid 2px;
 $theme-border-radius: 0.40rem;
+$theme-aside-light: lighten($theme-primary-color, 29);
+
+$theme-semiblue-container: rgba($color: $theme-primary-color, $alpha: 0.5);
 
 //break points on screen sizes
 // Breakpoints

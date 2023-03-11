@@ -4,4 +4,10 @@
 .app{
     background-color: $theme-primary-color;
     @include size(100vw, 100vh);
+
+    font-family: $third-font-open-sans;
+    font-weight: 500;
+    color: $theme-dark-color;
+
+
 }

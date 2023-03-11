@@ -1,0 +1,6 @@
+@import "../../mixins.module";
+@import "../../variables.module";
+
+.Work{
+    @include size(100%, 100vh);
+}

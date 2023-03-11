@@ -1,14 +1,18 @@
 import classes from "./Landing.module.scss";
 
 import Home from "../../componentes/Home/Home.component";
+import About from "../../componentes/About/About.component";
+import Jobs from "../../componentes/Experience/Jobs.component";
+import Work from "../../componentes/Work/Work.component";
 
 
 const LandingView = ()=>{
     return(
-        <div>
+        <div className={classes.Landing}>
             <Home />
-            <div className={classes.div1}></div>
-            <div className={classes.div2}></div>
+            <About />
+            {/* <Jobs /> */}
+            <Work />
         </div>
     );
 }

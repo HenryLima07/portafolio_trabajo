@@ -1,0 +1,28 @@
+@import "../../mixins.module";
+@import "../../variables.module";
+
+.title{
+   @include flex(row, center, flex-start);
+    gap: 0.5rem;
+
+    width: 100%;
+
+    font-family: $fourth-font-sans-pro;
+    
+    > h1{
+         font-size: 2rem;
+         color: $theme-lightest-color;
+         font-weight: 700;
+         white-space: nowrap;
+    }
+   > h2{
+        
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: $theme-aside-light;
+   }
+
+   > hr{
+    width: 100%;
+   }
+}

@@ -10,7 +10,7 @@ const Home = ()=>{
     }
 
     return(
-        <section className={classes.About}>
+        <section className={classes.Home}>
             <article className={classes["Presentation"]}>
                 <div className={classes.box}>Hi there!</div>
                 <h2>Henry Lima.</h2>

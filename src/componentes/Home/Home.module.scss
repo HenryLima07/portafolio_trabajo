@@ -1,24 +1,19 @@
 @import "../../mixins.module";
 @import "../../variables.module";
 
-.About{
-    @include size(100vw, 100vh);
-    background-color: $theme-primary-color;
+.Home{
+    width: 100%;
 
-    padding: 0 1.5rem;
-    @include flex();
+    @include flex(column, center, flex-start);
 
     > .Presentation{
 
-        font-family: $third-font-open-sans;
-        font-weight: 500;
         line-height: 1.4;
-        color: $theme-dark-color;
         padding: 1.5rem 0;
 
         >h2{
             font-family: $fourth-font-sans-pro;
-            font-weight: 600;
+            font-weight: 900;
             font-size: 2.5rem;
 
             color: $theme-lightest-color;
@@ -28,6 +23,7 @@
     > .photo{
 
         position: relative;
+        margin:  1rem 0 3rem 0;
 
         > .image{
             position: absolute;
@@ -35,7 +31,7 @@
             z-index: 15;
             
             &--blue{
-                background-color: rgba($color: $theme-primary-color, $alpha: 0.5);
+                background-color: $theme-semiblue-container;
             }
             &--real{
                 background-color: transparent;
@@ -64,7 +60,7 @@
 
             position: relative;
             width: 17rem;
-
+            
             border-radius: $theme-border-radius;
             z-index: 10;
 

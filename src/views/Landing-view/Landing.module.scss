@@ -1,11 +1,7 @@
 @import "../../mixins.module";
 @import "../../variables.module";
 
-.div1{
-    @include size(100vw, 100vh);
-    background-color: red;
-}
-.div2{
-    @include size(100vw, 100vh);
-    background-color: greenyellow;
+.Landing{
+    background-color: $theme-primary-color;
+    padding: 1.5rem;
 }
