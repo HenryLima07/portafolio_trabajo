@@ -1,0 +1,70 @@
+@import "../../mixins.module";
+@import "../../variables.module";
+
+.Home{
+    width: 100%;
+
+    @include flex(column, center, flex-start);
+
+    > .Presentation{
+
+        line-height: 1.4;
+        padding: 1.5rem 0;
+
+        >h2{
+            font-family: $fourth-font-sans-pro;
+            font-weight: 900;
+            font-size: 2.5rem;
+
+            color: $theme-lightest-color;
+        }
+    }
+
+    > .photo{
+
+        position: relative;
+        margin:  1rem 0 3rem 0;
+
+        > .image{
+            position: absolute;
+            @include size(100%);
+            z-index: 15;
+            
+            &--blue{
+                background-color: $theme-semiblue-container;
+            }
+            &--real{
+                background-color: transparent;
+            }
+        }
+        > .border{
+
+            position: absolute;
+            @include size(100%);
+
+            right: -27px;
+            bottom: -27px;
+            border-radius: $theme-border-radius;
+            z-index: 3;
+
+            &--semiblack{
+                border: solid $theme-darkest-color;
+            }
+            
+            &--blue{
+                border: solid $theme-secondary-color;
+            }
+        }
+
+        > img {
+
+            position: relative;
+            width: 17rem;
+            
+            border-radius: $theme-border-radius;
+            z-index: 10;
+
+        }
+    }
+    
+}

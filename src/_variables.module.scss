@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Open+Sans:wght@300;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Source+Sans+Pro:wght@300;600;700;900&display=swap');//fonts
+$first-font-roboto: 'Roboto', sans-serif;
+$second-font-monserrat: 'Montserrat', sans-serif;
+$third-font-open-sans: 'Open Sans', sans-serif;
+$fourth-font-sans-pro: 'Source Sans Pro', sans-serif;
+
+//color themes variables
+$theme-primary-color: #0d1017;
+//$theme-primary-light-color: lighten($theme-primary-color, 0.5);
+$theme-secondary-color: lighten($theme-primary-color, 3.5);
+$theme-third-color: darken(#A7CCCB, 65);
+$theme-dark-color: lighten(#58595b, 0.75);
+$theme-darkest-color: darken($theme-primary-color, 3);
+$theme-lightest-color: #FFFF;
+
+$theme-border: solid 2px;
+$theme-border-radius: 0.40rem;
+$theme-aside-light: lighten($theme-primary-color, 29);
+
+$theme-semiblue-container: rgba($color: $theme-primary-color, $alpha: 0.5);
+
+//break points on screen sizes
+// Breakpoints
+$screen-sm: 36em;       //576px Large smartphones
+$screen-md: 48em;       //768px Small tablets
+$screen-lg: 62em;       //992px Tablets
+$screen-xl: 75em;       //1200px Desktops
+$screen-xxl: 87.5em;    //1400px Large desktops

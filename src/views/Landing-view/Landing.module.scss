@@ -1,0 +1,7 @@
+@import "../../mixins.module";
+@import "../../variables.module";
+
+.Landing{
+    background-color: $theme-primary-color;
+    padding: 1.5rem;
+}

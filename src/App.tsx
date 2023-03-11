@@ -1,17 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { Route, Routes} from "react-router-dom";
+
+import classes from "./app.module.scss";
+import "./index.css";
+
+import Header from './componentes/Header/Header.component';
+
+
+//importing views
+import LandingView from './views/Landing-view/Landing.view';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        this is my app
-      </div>
+    <div className={classes["app"]}>
+      <Header />
+
+      <Routes>
+        <Route path={"/"} element={<LandingView />} />
+      </Routes>
     </div>
   )
 }
 
-export default App
+export default App;

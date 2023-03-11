@@ -1,0 +1,46 @@
+
+@import "../../../mixins.module";
+@import "../../../variables.module";
+
+.Technologies{
+
+    @include flex(row, center, space-between);
+    position: relative;
+    padding: 0.7rem 1rem;
+    
+    
+    width: 10rem;
+    
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: $theme-lightest-color;
+
+    cursor: pointer;
+    
+    >.container{
+        @include size(100%);
+        position: absolute;
+        
+        border-radius: $theme-border-radius;
+        
+        left: 0;
+        top: 0;
+        z-index: 5;
+        
+        &--blue{
+            background-color: $theme-semiblue-container;
+            border: $theme-border $theme-darkest-color;
+
+        }
+
+        &--original{
+            background-color: transparent;
+            border: $theme-border $theme-lightest-color;
+        }
+
+    }
+    > img{
+        //position: relative;
+        @include size(1rem);
+    }
+}

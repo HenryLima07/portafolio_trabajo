@@ -1,0 +1,91 @@
+@import "../../../mixins.module";
+@import "../../../variables.module";
+
+.aside-menu{
+    @include size(70%, 100vh);
+    width: min(75vw, 400px);
+
+    padding: 2rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+
+    background-color: darken($color: $theme-secondary-color, $amount: 3);
+    
+    font-family: $first-font-roboto;
+    font-weight: 400;
+    color: $theme-aside-light;
+
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.nav-menu{
+    @include size(100%, 100vh);
+    @include flex(column, center, center);
+    gap: 1.5rem;
+
+    > svg {
+        position: absolute;
+        @include size(3rem);
+
+        top: 1rem;
+        right: 1rem;
+
+        color: $theme-aside-light;
+    }
+    
+    >ol{
+        @include flex();
+
+        list-style: none;
+        counter-reset: menu-counter;
+        
+        > li{
+            @include flex();
+            gap: 0.5rem;
+            
+            padding: 1.5rem;
+            counter-increment: menu-counter;
+
+            &::before{
+                content: "0" counter(menu-counter) ". ";
+            }
+            
+        }
+
+    }
+    
+    > a:last-child{
+        padding: 1rem 3rem;
+
+        border: $theme-border;
+        border-color: $theme-aside-light;
+        color: $theme-aside-light;
+        border-radius: $theme-border-radius;
+
+    }
+}
+
+a{
+
+    text-decoration: none;
+    color: $theme-lightest-color;
+
+}
+
+.nav{
+    &--open{
+        visibility: none;
+        transform: translateX(0vw);
+        
+        &::after {display: flex;}
+        
+    }
+    &--close{
+        visibility: visible;
+        transform: translateX(100vw);
+        &::after {display: none;}
+    }
+}
